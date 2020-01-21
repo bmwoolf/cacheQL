@@ -1,8 +1,3 @@
-// const test = require("jest-runner")
-// import redis from 'redis';
-// import jest from 'jest-runner'
-// import redis_mock from 'redis-mock';
-// import {auth, set, checkify, cachify} from '../cacheql';
 const redis = require('redis');
 const cacheql = require('../cacheql');
 const {auth, set, checkify, cachify} = require('../cacheql')
@@ -30,4 +25,7 @@ test('it should log into redis unsuccessfully', () => {
     expect(cacheql.set(testData)).toBe(undefined)
 })
 
-//auth
+//checkify
+test('it should successfully return from the cache', () => {
+
+})

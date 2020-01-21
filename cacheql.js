@@ -58,7 +58,7 @@ cacheQL.checkify = async (query, partial = false) => {
 
   // Partial query
   // Checks passed in partial parameter if partial query/field detection is true
-  //
+
   if (partial) {
     // Need to check if field is already inside cache
     // Comparison of fields
@@ -119,7 +119,6 @@ cacheQL.checkify = async (query, partial = false) => {
       // need to fix bug
       // if partial fields are in cache then partial fields need to be taken from the end point
       // then combined which will be final result
-      //
 
       // Checks if resultObj is empty
       // This means the initial part of the query is the same
